@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.goo.civilcastle.MainActivity">
@@ -733,11 +734,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageButton"
-        android:layout_alignBottom="@+id/imageView40"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="0dp"
         android:adjustViewBounds="false"
-        android:background="@mipmap/myclock" />
+        android:background="@mipmap/myclock"
+        android:layout_above="@+id/imageView40"
+        android:layout_centerHorizontal="true"
+        android:onClick="myMainClick" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -747,4 +748,40 @@
         android:layout_below="@+id/imageView41"
         android:layout_toRightOf="@+id/imageView41"
         android:layout_toEndOf="@+id/imageView41" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/imageView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:background="@mipmap/coinsscore"
+            android:layout_margin="10dp">
+
+            <FrameLayout
+                android:layout_width="88dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="12"
+                    android:id="@+id/textView"
+                    android:textColor="#dc9a17"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>
