@@ -736,9 +736,9 @@
         android:id="@+id/imageButton"
         android:adjustViewBounds="false"
         android:background="@mipmap/myclock"
-        android:layout_above="@+id/imageView40"
-        android:layout_centerHorizontal="true"
-        android:onClick="myMainClick" />
+        android:onClick="myMainClick"
+        android:layout_below="@+id/imageView38"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -776,12 +776,74 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="12"
-                    android:id="@+id/textView"
+                    android:text="0"
+                    android:id="@+id/myCoinsScore"
                     android:textColor="#dc9a17"
                     android:layout_gravity="center" />
             </FrameLayout>
         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_below="@+id/imageView5"
+        android:layout_above="@+id/imageView68"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_marginLeft="30dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:background="@mipmap/buttonshui"
+            android:layout_below="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:layout_toEndOf="@+id/imageView5" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:background="@mipmap/buttonsrinok" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton4"
+            android:background="@mipmap/buttonsfish" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton5"
+            android:background="@mipmap/buttonsfermerhome" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton6"
+            android:background="@mipmap/buttonstreeshome" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton7"
+            android:background="@mipmap/buttonsgoodhouse" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton8"
+            android:background="@mipmap/buttonsbighouse" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton9"
+            android:background="@mipmap/buttonscherche" />
     </LinearLayout>
 
 </RelativeLayout>
