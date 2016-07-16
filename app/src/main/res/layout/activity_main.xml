@@ -737,8 +737,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="0dp"
         android:adjustViewBounds="false"
-        android:src="@mipmap/chapel"
-        android:background="none" />
+        android:background="@mipmap/myclock" />
 
     <ImageView
         android:layout_width="wrap_content"
